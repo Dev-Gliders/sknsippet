@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome cdn font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div class="hero-header">
+            <div class="wrapper">
+                <header>
+                    <div class="logo ">
+                        <i class="fa-solid fa-s"></i>
+                            <div class="logo-text">Shazaib Khan</div>
+                    </div>
+                    <nav>
+                        <div class="togglebtn">
+                            <span>Home </span>
+                            <span>Portfolio</span>
+                            <span>Resume</span>
+                            <span>Blog</span>
+                        </div>
+                        <ul class="navlinks">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Resume</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="container">
+                    <div class="hero-pic">
+                        <img src="images/boy.png" alt="portfolio pic">
+                    </div>
+                    <div class="hero-text">
+                        <h5>Hi I'm <span class="input"> Frontend Developer</span></h5>
+                        <h1>Shazaib Khan</h1>
+                        <p>
+                            Hi there! I am a skilled web developer with expertise in multiple programming languages including
+                            HTML, CSS, JavaScript, and PHP. With over [2 years] of experience in the industry, 
+                            I have developed and maintained various web applications and websites, 
+                            both independently and as part of a team. I am familiar with modern web development frameworks 
+                            such as React and Angular, as well as content management systems like WordPress and Drupal.
+                        </p>
+                        <div class="btn-group">
+                            <a href="#" class="btn">Download CV</a>
+                            <a href="#" class="btn">Contact</a>
+                        </div>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-dribble"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  typed js cdn for typing  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        /** CREATING button click show hide number? **/ 
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav =document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li a");
+
+        togglebtn.addEventListener("click" ,function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings : ["Front Developer","UX-Designer","Web Designer"],
+            typedspeed: 100,
+            backspeed : 55,
+            loop:true
+        })
+    </script>
+</body>
+</html>
